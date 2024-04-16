@@ -1,0 +1,1 @@
+export  const url_ubicacion = "http://localhost/proyectosPHP/ChatAppFinal/";

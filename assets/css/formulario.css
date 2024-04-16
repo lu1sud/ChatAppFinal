@@ -1,0 +1,156 @@
+.form__content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  var(--second-color);
+}
+
+.form{
+    width: 350px;
+    background-color: transparent;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+.form__icon{
+    background-color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto var(--mb-1-5);
+}
+
+.form__icon i{
+    font-size: 2rem;
+}
+
+.form__input{
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-alt-color);
+    outline: none;
+    font-size: var(--font-size-normal);
+}
+
+.form__input::placeholder{
+    color: #c4c4c2;
+}
+
+.button{
+    background-color:   transparent;
+    color: #fff;
+    font-size: var(--font-size-normal);
+    padding: .75rem 1.5rem;
+    display: inline-block;
+    border:1px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.form__option{
+    text-align: center;
+    color:  #7c8484 ;
+    margin-bottom: 2rem;
+    font-size: var(--font-size-normal);
+}
+
+.form__option a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: var(--font-size-normal);
+}
+
+.form__option a:hover{
+    color: rgb(143, 143, 195);
+    text-decoration: underline;
+}
+
+.group__form{
+    padding: 10px;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.form__errors{
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.icon__password{
+    position: absolute;
+    color: var(--primary-color);
+    right: .5rem;
+    bottom: .5rem;
+    font-size: var(--font-size-normal);
+}
+
+.group__input{
+    width: 100%;
+    height: 120px;
+    border: 2px dashed #fff;
+    position: relative;
+    margin: 0 auto 2rem;
+}
+
+.form__input-img{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form__label-img{
+    color: var(--primary-color);
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    font-size: var(--font-size-normal);
+}
+
+.form__img-icon{
+    position: absolute;
+    color: var(--primary-color);
+    bottom: 5px;
+    font-size: var(--font-size-icon);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.group__img{
+    margin: 0 auto var(--mb-1-5);
+    background-color: transparent;
+    position: relative;
+}
+
+.group__img img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.group__img i{
+    color: #fff;
+    position: absolute;
+    font-size: var(--font-size-icon);
+    top: -10px;
+}
+
+.img-active{
+    display: none;
+}

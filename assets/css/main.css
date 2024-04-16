@@ -1,0 +1,150 @@
+:root{
+    
+    --font-height: 3rem;
+
+    /*----- FONT ------*/
+    --font-normal-text: Arial, Helvetica, sans-serif;
+
+    --font-size-biggest: 1.5rem;
+    --font-size-icon: 1.25rem;
+    --font-size-normal: 1rem;
+    --font-size-small: .75rem;
+    --font-size-smaller: .5rem;
+
+    /*----- COLORS ------*/
+    --primary-color: #fff;
+    --second-color: #000;
+    --primary-alt-color: #c4c4c3;
+    --second-alt-color: #040303;
+
+    /*--------- Margin ---------*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+
+    --mb-1: 1rem;
+    --mb-1-25: 1.25rem;
+    --mb-1-5: 1.5rem;
+    --mb-1-75: 1.75rem;
+
+    --mb-2: 2rem;
+
+    /* ---- size img ----*/
+    --width-img: 3rem;
+    --height-img: 3rem;
+
+    /*  tooltick  */
+    --z-index-0: 1;
+    --z-index-1: 20;
+    --z-index-2: 40;
+    --z-index-3: 60;
+    --z-index-4: 80;
+    --tooltick: 100;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-normal-text);
+}
+
+li{
+    list-style: none;
+}
+
+.grid{
+    display: grid;
+}
+
+.chatApp{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-alt-color);
+}
+
+@media screen and (min-width: 768px){
+
+    :root{
+        --font-size-biggest: 1.675rem;
+        --font-size-icon: 1.375rem;
+        --font-size-normal: 1.275rem;
+        --font-size-small: .875rem;
+        --font-size-smaller: .675rem;
+
+        /* ---- size img ----*/
+        --width-img: 4rem;
+        --height-img: 4rem;
+
+    }
+    .chatApp__container{
+        grid-template-columns: 300px 1fr;
+    }
+
+    .boxchat__container{
+        display: block;
+    }
+
+    .gravar__icon div i{
+        width: 9rem;
+        height: 9rem;
+        text-align: center;
+        padding: 2rem;
+        font-size: 5rem;
+        display: block;
+    }
+
+    .header__data-name{
+        max-width: 330px;
+    }
+
+}
+
+@media screen and (min-width: 1023px){
+    :root{
+        --font-size-biggest: 1.75rem;
+        --font-size-icon: 1.5rem;
+        --font-size-normal: 1.125rem;
+        --font-size-small: 1rem;
+        --font-size-smaller: .75rem;
+
+        /* ---- size img ----*/
+        --width-img: 3.5rem;
+        --height-img: 3.5rem;
+
+    }
+    .chatApp__container{
+        grid-template-columns: 420px 1fr;
+    }
+
+    
+    
+}
+
+@media screen and (width: 1024px) AND (height: 600px){
+    :root{
+        --font-size-biggest: 1.75rem;
+        --font-size-icon: 1.5rem;
+        --font-size-normal: 1rem;
+        --font-size-small: 1rem;
+        --font-size-smaller: .75rem;
+
+        /* ---- size img ----*/
+        --width-img: 3.5rem;
+        --height-img: 3.5rem;
+
+    }
+    
+}
+
+@media screen and (min-height: 270px){
+    
+    .form__content{
+        overflow: auto;
+        align-items: normal;
+    }
+    
+}
